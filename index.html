@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация и Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+       <form class="auth-form">
+            <input type="text" placeholder="Логин" required>
+            <input type="password" placeholder="Пароль" required>
+            <button type="submit">Войти</button>
+            <p>Нет аккаунта? <a href="#" id="show-register">Зарегистрироваться</a></p>
+        </form>
+
+        <form class="auth-form" id="register-form" style="display: none;">
+            <input type="text" placeholder="Имя" required>
+            <input type="text" placeholder="Логин" required>
+            <input type="password" placeholder="Пароль" required>
+            <button type="submit">Зарегистрироваться</button>
+            <p>Уже есть аккаунт? <a href="#" id="show-login">Войти</a></p>
+        </form>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #ececec; /* Светло-серый фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff; /* Белый фон для контейнера */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Более pronounced shadow */
+    width: 350px;
+    animation: fadeIn 0.5s ease; /* Добавлена анимация появления */
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form h2 {
+    margin-bottom: 25px;
+    color: #333; /* Темно-серый текст */
+    font-size: 24px; /* Увеличенный шрифт заголовка */
+}
+
+.auth-form input {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #aaa; /* Светло-серый бордер */
+    border-radius: 6px;
+    transition: border 0.3s; /* Плавный переход при фокусе */
+}
+
+.auth-form input:focus {
+    border-color: #68a8ff; /* Цвет бордера при фокусе */
+}
+
+.auth-form button {
+    padding: 12px;
+    background-color: #007BFF; /* Синий цвет фона */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px; /* Увеличенный шрифт кнопки */
+    transition: background-color 0.3s; /* Плавный переход при наведении */
+}
+
+.auth-form button:hover {
+    background-color: #0056b3; /* Темнее синий при наведении */
+}
+
+.auth-form p {
+    text-align: center;
+    color: #777; /* Светло-серый текст для параграфов */
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 25px; /* Центрирование логотипа и отступ снизу */
+    width: 80%; /* Уменьшенная ширина логотипа */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
